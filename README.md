@@ -7,11 +7,20 @@ Track-animals is a web application built using Flask and html that provides live
 Live Updates: Stay informed about recent animal sightings in different regions.
 News Reports: Access detailed reports about recent animal sightings, including location information and safety instructions.
 Emergency Contacts: Find emergency contact numbers for different regions to report animal sightings or seek assistance.
-## Setup
-1.Install flask
- pip install flask .
-2.Run the Application:
- python app.py
+### Installation
+
+1. Clone this repository to your local machine:
+
+    bash
+   git clone https://github.com/Duyoofmp/SentiNental.git
+   cd SentiNental
+   
+
+2. Install the required dependencies for the frontend:
+
+   bash
+   cd frontend
+   npm install
 
 ## Usage
 Upon accessing the application, you will see live updates and news reports about animal sightings in different regions.
