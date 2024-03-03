@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virtual replica</title>
+
+</head>
+
+<body>
+    <style>
+        footer {
+            background-color: #333;
+            width: 100%;
+            color: #fff;
+            padding: 20px;
+            text-align: center
+        }
+        p {font-size: 30px;}
+        nav a {
+        font-size: 30px;
+        
+    }   
+        a {
+            
+            text-decoration:none ;
+            padding: 105px ;
+            
+        }
+        h1 {
+                text-align:center;
+                color: green;
+            }
+            h2 {text-align:center;}
+            h3 {
+                font-size: 35px;
+                color: red;
+            }
+            .form-container {
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        width: 40%;
+        margin-top: 30px;
+        margin-left: 450px; 
+    }
+
+    .form-container h2 {
+        text-align: left;
+    }
+
+    .form-container p {
+        margin-top: 30px;
+        margin-bottom: 10px; 
+    }
+
+    .form-container input,
+    .form-container textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .form-container input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form-container input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+        
+            
+        
+    </style>
+        <style>
+            body {
+                background-color: rgb(212, 243, 243);
+               
+            } 
+            h1 {
+                font-size: 50px; 
+            }
+        </style>
+        
+        <h1>Track animals</h1>
+        
+         <style>
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #f2f2f2;
+                padding: 10px 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            
+            nav a {
+                text-decoration: none;
+                color: #333;
+                padding: 5px 10px;
+                margin: 0 5px;
+            }
+            
+            nav input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            
+            nav input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+        
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Live Updates</a>
+            <a href="#">News Reports</a>
+            <a href="#">Map</a>
+            <input type="submit" value="Login/Sign up">
+        </nav>
+        
+        <div class="form-container">
+            <h2>Contact Details</h2>
+            <p>Name: <input type="text" name="name"></p>
+            <p>Contact No: <input type="number" name="contact_no"></p>
+            <p>Address: <textarea name="Address" id="Address" cols="30" rows="5"></textarea></p>
+            <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+            <p>Location: <input type="text" name="location"></p>
+            <input type="submit" value="Next">
+        </div>
+        
+        <h3>Alert</h3>
+        <p>Tiger sighted in Pulpally region.</p>
+            <h2 style="text-align: left; font-size: 35px;">What's new?</h2>
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+               <img src="{{url_for('static',filename='img_tiger.jpeg')}}" alt="Image 1" style="width: 50%; height: auto;">
+            <p style="width: 50%; font-style: italic;">#Residents of <span style="color: orange;">Meenangadi</span>, <span style="color: orange;">Kalluvayal</span>, <span style="color: orange;">Chettappalam</span>, <span style="color: orange;">Mukkenkolli</span>, <span style="color: orange;">Nadavayal</span> are urged to exercise extreme caution as a tiger has been spotted roaming at 7:30pm. The predator poses a significant threat to public safety. Please remain indoors and avoid venturing outside until further notice. Authorities are actively working to safely relocate the tiger. Stay tuned for the latest information and adhere to all safety precautions advised by authorities.</p>
+            </div>
+        </div>
+        
+        <h3>Alert</h3>
+        <p>Elephant spotted in Mananthawady region</p>
+        <h2 style="text-align: left; font-size: 35px;">What's new?</h2>
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <img src="{{url_for('static',filename='img_eleph.jpeg')}}" alt="Image 2" style="width: 50%; height: auto;">
+            <p style="width: 50%; font-style: italic;">#Residents of <span style="color: orange;">Edavaka</span>, <span style="color: orange;">Cheriyamkolli</span>, <span style="color: orange;">4th mile</span>, <span style="color: orange;">Vellamunda</span>, <span style="color: orange;">Thavinhal</span>,  an elephant has been spotted at 2:30pm. Avoid approaching the animal. Authorities are handling the situation. Stay indoors and await updates.</p>
+        </div>
+        
+        <h3>Alert</h3>
+        <p>Bear spotted in Sulthan Bathery region</p>
+        <h2 style="text-align: left; font-size: 35px;">What's new?</h2>
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <img src="{{url_for('static',filename='img_bear.jpeg')}}" alt="Image 3" style="width: 50%; height: auto;">
+            <p style="width: 50%; font-style: italic;">#Residents of <span style="color: orange;">Nenmeni</span>, <span style="color: orange;">Moolankavu</span>, <span style="color: orange;">Vakery</span>, <span style="color: orange;">Ambalavayal</span>, <span style="color: orange;">Madakara</span>,   A bear has been sighted at 12:30pm. DO NOT approach. Emergency services are responding. Remain indoors until further notice for your safety.</p>
+        </div>
+            
+            <h4 style="font-size: 35px; text-decoration: underline;">Emergency contacts;</h4>
+            
+              <ol style="font-size: 25px;">
+                <li>Pulpally Range: 8547603509</li>
+                <li>Sulthan Bathery Range: 8547603532</li>
+                <li>Kuruchiat Range: 8547603487</li>
+                <li>Tholpetty Range: 8547603548</li>
+            </ol>
+            <footer>
+        <p>&copy; 2024 Virtual Replica. All rights reserved.</p>
+    </footer>
+        
+    </body>
+</html>
